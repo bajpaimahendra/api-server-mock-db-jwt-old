@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+footer{
+    float:left;
+    width:100%;
+    background:#101011;
+}
+    
+.copy-right{
+    float:left;
+    width:100%;
+    padding:15px 0px;
+    }
+.copy-right p{
+    font-size:14px;
+	font-weight: bold;
+    color:#999;
+    text-align:center;
+    padding:0px;
+    margin-bottom:5px;
+    }
+.copy-right p span{
+    color:#009ddc;
+    }
+.copy-right p a{
+    color:#009ddc;
+    }
+
+
+.copy-left{
+    float:left;
+    width:100%;
+    padding:0px 0px;
+    }
+.copy-left p{
+    font-size:28px;
+    color:#999;
+    text-align:right;
+    padding: 0px;
+	margin-top: -45px;
+    margin-bottom: 5px;
+    }
+.copy-left p span{
+    color:#009ddc;
+    }
+.copy-left p a{
+    color:#009ddc;
+    }

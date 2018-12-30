@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-3 col-md-10">
+    <h2>Add Product</h2>
+  </div>
+  <div class="col-xs-12 col-sm-3 col-md-2">
+    <a [routerLink]="['/products']" class="btn btn-primary">Back</a>
+  </div>
+</div>
+<hr class="mb-4">
+
+<form class="needs-validation" 
+  [formGroup]="addProductFrm"  (ngSubmit)="addProduct(addProductFrm)" novalidate>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="pName"><strong> Product Name</strong></label>
+      <input type="text" class="form-control"
+      id="pName" formControlName="name" placeholder="" value="" required>
+      <div class="error text-danger"
+      *ngIf="addProductFrm.get('name').touched && addProductFrm.get('name').hasError('required')"
+      >
+        Valid product name is required.
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="pCost"><strong>Product Cost</strong></label>
+      <input type="text" class="form-control" 
+      id="pCost" formControlName="cost" placeholder="" value="" required>
+      <div class="error text-danger"
+      *ngIf="addProductFrm.get('cost').touched && addProductFrm.get('cost').hasError('required')"
+      >
+        Valid cost name is required.
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="pQuantity"><strong> Product Quantity</strong></label>
+        <input type="text" class="form-control"
+         id="pQuantity" formControlName="quantity" placeholder="" value="" required>
+        <div class="error text-danger"
+        *ngIf="addProductFrm.get('quantity').touched && addProductFrm.get('quantity').hasError('required')"
+        >
+          Valid quantity name is required.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="pRating"><strong>Product Rating</strong></label>
+        <input type="text" class="form-control" 
+        id="pRating" formControlName="rating" placeholder="" value="" required>
+        <div class="error text-danger"
+        *ngIf="addProductFrm.get('rating').touched && addProductFrm.get('rating').hasError('required')"
+        >
+          Valid rating is required.
+        </div>
+      </div>
+    </div>
+
+  <hr class="mb-4">
+  <div class="row  form-group">
+    <div class="col text-right">
+      <button type="submit" class="btn btn-success" [disabled]="addProductFrm.invalid">Save</button>
+    </div>
+  </div>
+</form>
