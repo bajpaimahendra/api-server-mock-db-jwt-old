@@ -10,7 +10,7 @@ A Fake REST API using json-server with JWT authentication. You can find the [com
 
 #### NOTE : All The  Endpoints are Private (require Authentication)
 
-## How to login?
+#### How to login?
 
 You can login by sending a POST request to
 
