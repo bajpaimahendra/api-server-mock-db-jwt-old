@@ -4,9 +4,9 @@ A Fake REST API using json-server with JWT authentication. You can find the [com
 
 ## Install
 
-
-	$ npm install
-	$ npm run start-auth
+	$  git clone https://github.com/bajpaimahendra/api-server-mock-db-jwt-old.git
+	$  npm install
+	$  npm run start-auth
 
 #### NOTE : All The  Endpoints are Private (require Authentication)
 
