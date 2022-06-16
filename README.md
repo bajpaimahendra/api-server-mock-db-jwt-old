@@ -1,1 +1,1 @@
-  $ git checout master
+    $  git checout master
