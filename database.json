@@ -1,0 +1,59 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "MackBoo Pro",
+      "cost": 20,
+      "quantity": 2000,
+      "rating": 4.2
+    },
+    {
+      "name": "test1",
+      "cost": "test1",
+      "quantity": "test1",
+      "rating": "test1",
+      "id": 3
+    },
+    {
+      "name": "test2",
+      "cost": "test2",
+      "quantity": "test2",
+      "rating": "test2",
+      "id": 4
+    },
+    {
+      "name": "test3",
+      "cost": "test3",
+      "quantity": "test3",
+      "rating": "test3",
+      "id": 5
+    },
+    {
+      "name": "test4",
+      "cost": "test4",
+      "quantity": "test4",
+      "rating": "test4",
+      "id": 6
+    },
+    {
+      "name": "test",
+      "cost": "erer",
+      "quantity": "erer",
+      "rating": "erer",
+      "id": 7
+    }
+  ],
+  "comments": [
+    { "id": 1, "body": "like the added screen cover", "productId": 1 },
+    { "id": 1, "body": "the directions need to be clearer", "productId": 2 },
+    { "id": 3, "body": "I received 3 different packages without mouse", "productId": 3 }
+  ],
+  "transactions": [
+    {
+      "id": 2,
+      "cost": 12,
+      "quantity": 100,
+      "productId": 2
+    }
+  ]
+}
